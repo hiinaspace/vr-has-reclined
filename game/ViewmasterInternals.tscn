@@ -1,0 +1,59 @@
+[gd_scene load_steps=8 format=3 uid="uid://cod7ayg45wiyi"]
+
+[ext_resource type="PackedScene" uid="uid://dvlmi4ipsmp3u" path="res://game/Viewmaster2D.tscn" id="1_5pkxy"]
+[ext_resource type="Shader" path="res://game/stereounlit.gdshader" id="2_2l0ph"]
+
+[sub_resource type="QuadMesh" id="QuadMesh_uitaq"]
+
+[sub_resource type="ViewportTexture" id="ViewportTexture_w2a5h"]
+viewport_path = NodePath("2dViewport")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_4al1w"]
+resource_local_to_scene = true
+transparency = 1
+albedo_texture = SubResource("ViewportTexture_w2a5h")
+albedo_texture_force_srgb = true
+
+[sub_resource type="QuadMesh" id="QuadMesh_b1vcd"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_tskh6"]
+render_priority = 0
+shader = ExtResource("2_2l0ph")
+shader_parameter/separationX = null
+shader_parameter/zoom = 1.0
+shader_parameter/offset = null
+
+[node name="ViewmasterInternals" type="Node3D"]
+
+[node name="2dViewport" type="SubViewport" parent="."]
+disable_3d = true
+transparent_bg = true
+size = Vector2i(1064, 1064)
+
+[node name="Viewmaster2d" parent="2dViewport" instance=ExtResource("1_5pkxy")]
+
+[node name="ViewmasterCard" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.999993, -0.00380474, 0, 0.00380474, 0.999993, 0, 0, 0, 1, 0, 0, 0)
+layers = 2
+mesh = SubResource("QuadMesh_uitaq")
+surface_material_override/0 = SubResource("StandardMaterial3D_4al1w")
+
+[node name="LeftEyepiece" type="SubViewport" parent="."]
+size = Vector2i(2048, 2048)
+
+[node name="Camera3D" type="Camera3D" parent="LeftEyepiece"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.355449, 0, 0.790669)
+fov = 8.5
+far = 2.48
+
+[node name="RightEyepiece" type="SubViewport" parent="."]
+size = Vector2i(2048, 2048)
+
+[node name="Camera3D" type="Camera3D" parent="RightEyepiece"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.355, 0, 0.791)
+fov = 8.5
+
+[node name="ObjectivePicture" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.145693)
+mesh = SubResource("QuadMesh_b1vcd")
+surface_material_override/0 = SubResource("ShaderMaterial_tskh6")

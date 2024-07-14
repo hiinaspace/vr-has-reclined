@@ -1,0 +1,87 @@
+[gd_scene load_steps=46 format=3 uid="uid://b3yotbus7j136"]
+
+[ext_resource type="Script" path="res://game/skyobjects/HotAirBalloon.gd" id="1_vgdb5"]
+[ext_resource type="Texture2D" uid="uid://d1pbi2y4jcbqn" path="res://assets/Images/Decoy/02bluebucket.png" id="2_1rlyt"]
+[ext_resource type="Script" path="res://game/skyobjects/Basket.gd" id="2_bjcvd"]
+[ext_resource type="Texture2D" uid="uid://cqw15ghy2sko8" path="res://assets/Images/Card1/01boat.png" id="4_11bt6"]
+[ext_resource type="Texture2D" uid="uid://bwfxirkvb2ubp" path="res://assets/Images/Card1/02bucket.png" id="5_6vxnh"]
+[ext_resource type="Texture2D" uid="uid://o2a0oo732cok" path="res://assets/Images/Card1/03crab.png" id="6_1w3aj"]
+[ext_resource type="Texture2D" uid="uid://d1l6nd62kvaod" path="res://assets/Images/Card1/04melon.png" id="7_yi134"]
+[ext_resource type="Texture2D" uid="uid://vywe87a1nt53" path="res://assets/Images/Card1/05sandcastle.png" id="8_2gpuo"]
+[ext_resource type="Texture2D" uid="uid://bleomh63jhapt" path="res://assets/Images/Card1/06starfish.png" id="9_t7rov"]
+[ext_resource type="Texture2D" uid="uid://crbmjd8xygm70" path="res://assets/Images/Card2/07snail.png" id="10_j3ytd"]
+[ext_resource type="Texture2D" uid="uid://jyg4kk77kkra" path="res://assets/Images/Card2/08chest.png" id="11_cvsdo"]
+[ext_resource type="Texture2D" uid="uid://bbajctuq23qvi" path="res://assets/Images/Card2/09fish.png" id="12_68ee7"]
+[ext_resource type="Texture2D" uid="uid://t8ilaf6duton" path="res://assets/Images/Card2/10greenfish.png" id="13_3kx87"]
+[ext_resource type="Texture2D" uid="uid://b883hbvc5ayi8" path="res://assets/Images/Card2/11jellyfish.png" id="14_lthrk"]
+[ext_resource type="Texture2D" uid="uid://dqnnecnaloxuf" path="res://assets/Images/Card2/12seal.png" id="15_saf4v"]
+[ext_resource type="Texture2D" uid="uid://b6agyrqhbr2cu" path="res://assets/Images/Card3/13bird.png" id="16_5ax4b"]
+[ext_resource type="Texture2D" uid="uid://bvogrjftfmce1" path="res://assets/Images/Card3/14snail.png" id="17_fsdg0"]
+[ext_resource type="Texture2D" uid="uid://clx1qnsxnogy3" path="res://assets/Images/Card3/15cat.png" id="18_ww0oa"]
+[ext_resource type="Texture2D" uid="uid://b71vj84k7bo8d" path="res://assets/Images/Card3/16starfish.png" id="19_hyeke"]
+[ext_resource type="Texture2D" uid="uid://d04s0cavg1bp" path="res://assets/Images/Card3/17turtleshell.png" id="20_lqixm"]
+[ext_resource type="Texture2D" uid="uid://d16ott07u0tjt" path="res://assets/Images/Card3/18mountain.png" id="21_n0l2t"]
+[ext_resource type="Texture2D" uid="uid://bw7j5xfcmhfaf" path="res://assets/Images/Decoy/01hotdog.png" id="22_ilp8u"]
+[ext_resource type="Texture2D" uid="uid://bbxju2fo88xq4" path="res://assets/Images/Decoy/03shrimp.png" id="23_wudxg"]
+[ext_resource type="Texture2D" uid="uid://choccv54r0vye" path="res://assets/Images/Decoy/04ball.png" id="24_orwcb"]
+[ext_resource type="Texture2D" uid="uid://bunjpwce3e5xy" path="res://assets/Images/Decoy/05pineapple.png" id="25_o26jb"]
+[ext_resource type="Texture2D" uid="uid://bnrl2ejypmylw" path="res://assets/Images/Decoy/06fatfish.png" id="26_wbpoj"]
+[ext_resource type="Texture2D" uid="uid://1w7p7p04atqk" path="res://assets/Images/Decoy/07burger.png" id="27_y0iwl"]
+[ext_resource type="Texture2D" uid="uid://huh0be0uukv2" path="res://assets/Images/Decoy/08bag.png" id="28_t0trl"]
+[ext_resource type="Texture2D" uid="uid://dc836cp4ieoo8" path="res://assets/Images/Decoy/11mushroom.png" id="29_lbsgs"]
+[ext_resource type="Texture2D" uid="uid://c5uvvym8gps7v" path="res://assets/Images/Decoy/12dogberet.png" id="30_4som4"]
+[ext_resource type="Texture2D" uid="uid://cfx24sp46olmv" path="res://assets/Images/Decoy/13sealbird.png" id="31_yhyas"]
+[ext_resource type="Texture2D" uid="uid://cj7ij7i34ixut" path="res://assets/Images/Decoy/14fish.png" id="32_4x30p"]
+[ext_resource type="Texture2D" uid="uid://bfpnw860axfnn" path="res://assets/Images/Decoy/15dog.png" id="33_yargl"]
+[ext_resource type="Texture2D" uid="uid://d3s23s2gb1vnl" path="res://assets/Images/Decoy/17bred.png" id="34_gi0vf"]
+[ext_resource type="Texture2D" uid="uid://cqf4542f7cqsh" path="res://assets/Images/Decoy/16cake.png" id="35_1lgm1"]
+[ext_resource type="Texture2D" uid="uid://c63kw1a387x33" path="res://assets/Images/Decoy/18pyramid.png" id="36_ei8gd"]
+[ext_resource type="Texture2D" uid="uid://cj8e4j8cr15ni" path="res://assets/Images/Decoy/19eggpopsicle.png" id="37_55qle"]
+[ext_resource type="Texture2D" uid="uid://br8351pvqs6fd" path="res://assets/Images/Decoy/20shellfish.png" id="38_md2ay"]
+[ext_resource type="Texture2D" uid="uid://b402gt3p6n6fb" path="res://assets/Images/Decoy/21fish.png" id="39_gurq3"]
+[ext_resource type="Texture2D" uid="uid://dgla15gg7spvy" path="res://assets/Images/Decoy/22seagull.png" id="40_51q2u"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_brmbf"]
+radius = 6.15418
+height = 27.44
+
+[sub_resource type="SphereMesh" id="SphereMesh_kvqk1"]
+radius = 5.0
+height = 10.0
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_sqctq"]
+
+[sub_resource type="QuadMesh" id="QuadMesh_grdc4"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_0nfw4"]
+transparency = 2
+alpha_scissor_threshold = 0.5
+alpha_antialiasing_mode = 0
+shading_mode = 0
+albedo_texture = ExtResource("2_1rlyt")
+billboard_mode = 1
+billboard_keep_scale = true
+
+[node name="HotAirBalloon" type="RigidBody3D"]
+collision_layer = 3
+collision_mask = 3
+script = ExtResource("1_vgdb5")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.06956, 0)
+shape = SubResource("CapsuleShape3D_brmbf")
+
+[node name="Balloon" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1.34807, 0, 0, 0, 1, 0, 7.78378, 0)
+mesh = SubResource("SphereMesh_kvqk1")
+surface_material_override/0 = SubResource("StandardMaterial3D_sqctq")
+
+[node name="Target" type="MeshInstance3D" parent="."]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 0.0223103, -5.27805, -0.00882721)
+mesh = SubResource("QuadMesh_grdc4")
+surface_material_override/0 = SubResource("StandardMaterial3D_0nfw4")
+script = ExtResource("2_bjcvd")
+card1Images = Array[CompressedTexture2D]([ExtResource("4_11bt6"), ExtResource("5_6vxnh"), ExtResource("6_1w3aj"), ExtResource("7_yi134"), ExtResource("8_2gpuo"), ExtResource("9_t7rov")])
+card2Images = Array[CompressedTexture2D]([ExtResource("10_j3ytd"), ExtResource("11_cvsdo"), ExtResource("12_68ee7"), ExtResource("13_3kx87"), ExtResource("14_lthrk"), ExtResource("15_saf4v")])
+card3Images = Array[CompressedTexture2D]([ExtResource("16_5ax4b"), ExtResource("17_fsdg0"), ExtResource("18_ww0oa"), ExtResource("19_hyeke"), ExtResource("20_lqixm"), ExtResource("21_n0l2t")])
+decoys = Array[CompressedTexture2D]([ExtResource("22_ilp8u"), ExtResource("2_1rlyt"), ExtResource("23_wudxg"), ExtResource("24_orwcb"), ExtResource("25_o26jb"), ExtResource("26_wbpoj"), ExtResource("27_y0iwl"), ExtResource("28_t0trl"), ExtResource("29_lbsgs"), ExtResource("30_4som4"), ExtResource("31_yhyas"), ExtResource("32_4x30p"), ExtResource("33_yargl"), ExtResource("35_1lgm1"), ExtResource("34_gi0vf"), ExtResource("36_ei8gd"), ExtResource("37_55qle"), ExtResource("38_md2ay"), ExtResource("39_gurq3"), ExtResource("40_51q2u")])

@@ -1,0 +1,14 @@
+[gd_scene load_steps=2 format=3 uid="uid://bwhmbf06qnsac"]
+
+[ext_resource type="PackedScene" uid="uid://4c5qgengj6x3" path="res://assets/Models/Viewmaster/VRViewMaster.glb" id="1_vao3s"]
+
+[node name="VRViewMaster" instance=ExtResource("1_vao3s")]
+
+[node name="View Master" parent="." index="0"]
+layers = 32768
+
+[node name="View Card" parent="." index="1"]
+layers = 32768
+
+[node name="Lever" parent="." index="2"]
+layers = 32768

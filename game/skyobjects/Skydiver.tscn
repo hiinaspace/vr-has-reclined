@@ -1,0 +1,26 @@
+[gd_scene load_steps=5 format=3 uid="uid://b8k1xxucp0ifp"]
+
+[ext_resource type="Script" path="res://game/skyobjects/Skydiver.gd" id="1_l2kig"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_tw2jt"]
+size = Vector3(10.0836, 6.63428, 2.06717)
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_yajup"]
+
+[sub_resource type="PrismMesh" id="PrismMesh_gmpg5"]
+size = Vector3(10, 1.5, 2)
+
+[node name="Skydiver" type="RigidBody3D"]
+script = ExtResource("1_l2kig")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.141861, 2.81714, -0.0346779)
+shape = SubResource("BoxShape3D_tw2jt")
+
+[node name="Diver" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00483155, -0.00999737, 0.00928783)
+mesh = SubResource("CapsuleMesh_yajup")
+
+[node name="Parachute" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0472479, 4.94057, 0.0108528)
+mesh = SubResource("PrismMesh_gmpg5")

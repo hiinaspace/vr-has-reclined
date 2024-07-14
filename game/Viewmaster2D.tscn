@@ -1,0 +1,29 @@
+[gd_scene load_steps=4 format=3 uid="uid://dvlmi4ipsmp3u"]
+
+[ext_resource type="Texture2D" uid="uid://cf0keda60syyp" path="res://assets/Models/Viewmaster/VRViewMaster_mask.png" id="1_wtd8i"]
+[ext_resource type="Texture2D" uid="uid://dg2demueenvne" path="res://assets/stereopairs/popeye-nuke-left.png" id="2_8wl32"]
+[ext_resource type="Texture2D" uid="uid://da1pk75kfc3yl" path="res://assets/stereopairs/popeye-nuke-right.png" id="3_2fe6m"]
+
+[node name="Viewmaster2d" type="Node2D"]
+
+[node name="Mask" type="Sprite2D" parent="."]
+z_index = 80
+scale = Vector2(2, 2)
+texture = ExtResource("1_wtd8i")
+centered = false
+
+[node name="NukeLeft" type="Sprite2D" parent="."]
+visible = false
+modulate = Color(1, 1, 1, 0.92549)
+position = Vector2(374, 745)
+rotation = 0.453264
+scale = Vector2(0.446, 0.446)
+texture = ExtResource("2_8wl32")
+
+[node name="NukeRight" type="Sprite2D" parent="."]
+visible = false
+modulate = Color(1, 1, 1, 0.92549)
+position = Vector2(1759, 1400)
+rotation = 0.440679
+scale = Vector2(0.446, 0.446)
+texture = ExtResource("3_2fe6m")

@@ -1,0 +1,8 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://cjylinr1vdjcw"]
+
+[ext_resource type="Texture2D" uid="uid://culcxo7324diu" path="res://assets/Models/Table_Wood066_2K-JPG_Color.jpg" id="1_32qhs"]
+
+[resource]
+albedo_color = Color(0.662745, 0.670588, 0.654902, 1)
+albedo_texture = ExtResource("1_32qhs")
+uv1_triplanar = true

@@ -1,0 +1,48 @@
+[gd_scene load_steps=7 format=3 uid="uid://by77wx5aqgw2g"]
+
+[ext_resource type="Script" path="res://game/skyobjects/Airship.gd" id="1_5ty3r"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_drcou"]
+radius = 14.3174
+height = 42.4803
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_xg2g2"]
+radius = 10.0
+height = 40.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_47xxj"]
+size = Vector3(10, 3, 3)
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_3fxs7"]
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_d3kub"]
+top_radius = 0.0
+bottom_radius = 7.865
+height = 20.0
+
+[node name="Airship" type="RigidBody3D"]
+script = ExtResource("1_5ty3r")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 12.3911, 0)
+shape = SubResource("CapsuleShape3D_drcou")
+
+[node name="Balloon" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 12.2821, 0)
+mesh = SubResource("CapsuleMesh_xg2g2")
+
+[node name="Basket" type="MeshInstance3D" parent="."]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, 0, 0)
+mesh = SubResource("BoxMesh_47xxj")
+
+[node name="Engine" type="MeshInstance3D" parent="."]
+transform = Transform3D(4.10732, 0, 0, 0, -1.48976e-07, 4.10732, 0, -3.40818, -1.79537e-07, 5, 7.0796, -15.4158)
+mesh = SubResource("CylinderMesh_3fxs7")
+
+[node name="Engine2" type="MeshInstance3D" parent="."]
+transform = Transform3D(4.10732, 0, 0, 0, -1.48976e-07, 4.10732, 0, -3.40818, -1.79537e-07, -5, 7.0796, -15.4158)
+mesh = SubResource("CylinderMesh_3fxs7")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1, -8.74228e-08, -3.82137e-15, 0, -4.37114e-08, 1, -8.74228e-08, 1, 4.37114e-08, 0, 12.2046, 25.7477)
+mesh = SubResource("CylinderMesh_d3kub")
